@@ -26,8 +26,7 @@ export function UpdateInvoice({ id }: { id: string }) {
 }
 
 export function DeleteInvoice({ id }: { id: string }) {
-  async function handleDelete(formData: FormData) {
-    console.log("🚀 ~ handleDelete ~ formData:", formData)
+  async function handleDelete() {
     await deleteInvoice(id);
   }
   return (
